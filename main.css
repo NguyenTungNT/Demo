@@ -25,7 +25,7 @@ body {
     width: 100%;
 }
 .header {
-    padding: 12px;
+    padding: 0px 0 2px 0;
     margin-bottom: 43px;
     background-color: #D9D9D9;
 }
@@ -106,7 +106,7 @@ ul {
         padding-left: 30px;
     }
 }
-/*mobile*/git add .
+/*mobile*/
 @media only screen and (max-device-width: 768px) {
     .main {
         padding: 0 16px;
@@ -122,5 +122,8 @@ ul {
     }
     .about {
         padding-left: 0;
+    }
+    .header {
+        padding: 12px;
     }
 }
