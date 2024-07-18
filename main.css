@@ -7,6 +7,7 @@ body {
     background-color: #f4f4f4;
 }
 .container {
+    padding:12px;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -122,8 +123,5 @@ ul {
     }
     .about {
         padding-left: 0;
-    }
-    .header {
-        padding: 12px;
     }
 }
