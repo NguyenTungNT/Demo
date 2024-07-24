@@ -71,7 +71,8 @@
                     <p>I am currently managing a tech team of 30 developers in Singapore, Vietnam, and Indonesia.</p>
                 </div>
                 <h2>Frequently asked questions</h2>
-                <ul class="list-unstyled">
+                <button type="button" class="collapsible">Click the button</button>
+                <ul class="unstyled">
                     <li>Can I launch a MVP in 3 months?</li>
                     <hr>
                     <li>How much should I pay to build a MVP?</li>
@@ -85,5 +86,21 @@
         </div>
     </section>
 </div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var unstyle = this.nextElementSibling;
+            if (unstyle.style.display === "none") {
+                unstyle.style.display = "block";
+            } else {
+                unstyle.style.display = "none";
+            }
+        });
+    }
+</script>
 </body>
 </html>
